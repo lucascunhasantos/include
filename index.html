@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <section class="biography">
+            <div class="menu-icon" style="font-size: 1.5rem;">
+                &#9776;
+              </div>
+            <h1 style="font-size: 70px; font-weight: bold; margin-bottom: 1rem; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Lucas dos Santos</h1>
+            <h3 style="font-weight: lighter; margin-bottom: 4rem;">ESTUDANTE DE ENGENHARIA DE SOFTWARE</h3>
+            <h3 style="margin-bottom: 1rem; font-size: 25px; font-family: roboto, sans-serife;">Sobre Mim</h3>
+            <p>
+                Discente em Engenharia de Software, com interesse e experiência na área de Análise de Requisitos, Processos e seus respectivos Gerenciamentos. Habilidade em identificar necessidades específicas de projetos, transformar demandas em soluções claras e eficientes, além de colaborar para o desenvolvimento de sistemas alinhados aos objetivos dos clientes.
+            </p>
+        </section>
+
+        <section class="hobbies">
+            <h3 style="margin-bottom: 1rem; font-size: 25px; font-family: roboto, sans-serife;">Hobbies & Interesses</h3>
+            <div style="margin-bottom: 4rem;" class="hobbies-grid">
+                <div class="hobby-card">
+                    <h4>Leitura</h4>
+                    <p>Admirador da literatura clássica e histórica</p>
+                </div>
+                <div class="hobby-card">
+                    <h4>Esportes</h4>
+                    <p>Gosto muito de vôlei, futsal, Handebol e estou criando o hábito de praticar corridas</p>
+                </div>
+                <div class="hobby-card">
+                    <h4>Socialização</h4>
+                    <p>Estabelecer novos vínculos de amizade</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h3 style="margin-bottom: 1rem; font-size: 25px; font-family: roboto, sans-serife;">Projetos</h3>
+            <div style="margin-bottom: 2rem;" class="projects-grid">
+                <div class="project-card">
+                    <h4>AprovaUFC</h4>
+                    <p>Analista de Requisitos</p>
+                    <button onclick="openModal('project1')">Ver projeto →</button>
+                </div>
+                <div class="project-card">
+                    <h4>AprovaUFC</h4>
+                    <p>Gerente de Projetos</p>
+                    <button onclick="openModal('project2')">Ver projeto →</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="redes">
+        <div id="div_perfil" style="background-color: black; overflow: hidden;">
+            <img id="perfil" src="assets/perfil.jpeg" alt="perfil">
+        </div>
+        <div class="links">
+            <a href="https://www.instagram.com/lucas.santosc?igsh=MWNybWE5YTZoNjlqYg==" target="_blank"><img src="assets/instagram.png" style="height: 30px; ;" alt="logo_insta"></a>
+            <a href="https://www.linkedin.com/in/lucas-cunha-52492931a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="assets/linkedin.png" style="height: 30px; ;" alt="logo_linkedin"></a>
+            <button style="all: unset; cursor: pointer;" onclick="openModal('doc')"><img src="assets/doc.png" style="height: 30px;" alt="logo_doc"></button>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
