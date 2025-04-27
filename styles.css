@@ -15,13 +15,12 @@ body {
 #perfil {
     width: 100%;
     border-radius: 1rem;
-    transform: translateY(-100px);
 }
 
 .redes {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 500px;
     height: 500px;
     align-items: end;
     position: fixed;
